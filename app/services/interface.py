@@ -1,7 +1,6 @@
 import time
 import pyautogui
 
-
 def typer(command):
     pyautogui.typewrite(command)
     pyautogui.typewrite('\n')
@@ -34,5 +33,3 @@ def give_me_some_rear_bottle(duration):
 
 time.sleep(5)
 
-give_me_some_green_bottle(2.5)
-give_me_some_white_bottle(1.5)
