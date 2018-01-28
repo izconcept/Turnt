@@ -1,5 +1,12 @@
 from flask import Flask
+from flask_socketio import SocketIO
 
 app = Flask(__name__)
-app.secret_key = '09sda09d90suDUSADhoSHdjkha'
-from app.routes import api, views
+socketio = SocketIO(app)
+
+
+@socketio.on('connect')
+def connect():
+    print('Connect')
+
+from app.routes import views
