@@ -1,3 +1,13 @@
+function drinkServed() {
+    swal({
+        title: "Your drink is ready!",
+        text: "Enjoy!",
+        icon: "success",
+        button: "Thanks!"
+    });
+}
+
+
 $(document).ready(function () {
     var socket = io.connect('http://' + document.domain + ':' + location.port);
     socket.on('connect', function () {
@@ -31,7 +41,7 @@ $(document).ready(function () {
             }
         ]
     });
-    $("#getTurnt").click(function() {
+    $("#getTurnt").click(function () {
         var drink = $('.slick-center').data('drink');
         console.log(drink);
         socket.emit('get turnt', {data: drink});
