@@ -26,6 +26,11 @@ def give_me_some_green_bottle(duration):
     time.sleep(duration)
     open_valve("Y", 3)
 
+def give_me_some_rear_bottle(duration):
+    close_valve("Z", 3)
+    time.sleep(duration)
+    open_valve("Z", 3)
+
 
 time.sleep(5)
 
