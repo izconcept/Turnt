@@ -37,4 +37,16 @@ $(document).ready(function () {
         socket.emit('get turnt', {data: drink});
         $("#progressModal").modal('show');
     })
+
+    socket.on('update', function (payload) {
+        console.log(payload)
+        var percentage = (payload['percentage'] * 100).toString() + '%'
+        console.log(percentage)
+        $('.progress-bar').css('width', percentage)
+        $('#drinkStatus').text(payload['message'])
+    });
+
+    socket.on('complete', function() {
+        console.log('DONE')
+    })
 });
