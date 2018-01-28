@@ -3,11 +3,12 @@ from flask import render_template, session, redirect, request
 
 
 drinks = {
-    'rum_and_coke': {'name': 'Rum and Coke', 'portions': [0, 4, 1], 'percentage': '0.1', 'amount': 8, 'img': '/static/img/cocktail.png'},
-    'coke': {'name': 'Coke', 'portions': [0, 4, 0], 'percentage': '0', 'amount': 8, 'img': '/static/img/softdrink.png'},
+    'rum_and_coke': {'name': 'Rum and Coke', 'portions': [0, 4, 1], 'percentage': '0.1', 'amount': 5, 'img': '/static/img/cocktail.png'},
+    'coke': {'name': 'Coke', 'portions': [0, 4, 0], 'percentage': '0', 'amount': 4, 'img': '/static/img/softdrink.png'},
     'rum(shot)': {'name': 'Rum', 'portions': [0, 0, 1], 'percentage': '0.4', 'amount': 1, 'img': '/static/img/shot.png'},
-    'gin_and_tonic': {'name': 'Gin and Tonic', 'portions': [1, 4, 0], 'percentage': '0.1', 'amount': 8, 'img': '/static/img/cocktail.png'},
+    'gin_and_tonic': {'name': 'Gin and Tonic', 'portions': [1, 4, 1], 'percentage': '0.1', 'amount': 6, 'img': '/static/img/cocktail.png'},
     'tequila(shot)': {'name': 'Tequila', 'portions': [0, 0, 1], 'percentage': '0.4', 'amount': 1, 'img': '/static/img/shot.png'},
+    'martini': {'name': 'Vodka Martini', 'portions': [1, 2, 1], 'percentage': '0.3', 'amount': 4, 'img': '/static/img/martini.png'},
     'gin(shot)': {'name': 'Gin', 'portions': [1, 0, 0], 'percentage': '0.4', 'amount': 1, 'img': '/static/img/shot.png'},
 }
 
