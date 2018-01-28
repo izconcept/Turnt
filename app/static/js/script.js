@@ -5,6 +5,11 @@ function drinkServed() {
         icon: "success",
         button: "Thanks!"
     });
+
+    $('.progress-bar').css('width', '0');
+    $('#drinkStatus').text('Calling Bartender...')
+    $('#progressModal').modal('hide');
+    
 }
 
 
@@ -46,5 +51,17 @@ $(document).ready(function () {
         console.log(drink);
         socket.emit('get turnt', {data: drink});
         $("#progressModal").modal('show');
+    })
+
+    socket.on('update', function (payload) {
+        console.log(payload)
+        var percentage = (payload['percentage'] * 100).toString() + '%'
+        console.log(percentage)
+        $('.progress-bar').css('width', percentage)
+        $('#drinkStatus').text(payload['message'])
+    });
+
+    socket.on('complete', function() {
+        setTimeout(function(){drinkServed()}, 2000)
     })
 });

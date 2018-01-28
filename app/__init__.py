@@ -23,9 +23,19 @@ def get_turnt(payload):
 
 def bartender(recipe):
     print("Making your drink!" + str(recipe))
+    total = sum(recipe)
+    complete = 0
     give_me_some_white_bottle(recipe[1])
-    # give_me_some_rear_bottle(recipe[0])
+    complete += recipe[1]
+    emit('update', {'message': 'Adding ' + str(recipe[1]) + ' ounce(s) of magic', 'percentage': complete/total})
+    give_me_some_rear_bottle(recipe[0])
+    complete += recipe[0]
+    emit('update', {'message': 'Adding ' + str(recipe[0]) + ' ounce(s) of that good stuff', 'percentage': complete/total})
+    print('yala')
     # give_me_some_green_bottle(recipe[2])
+    complete += recipe[2]
+    emit('update', {'message': 'Adding ' + str(recipe[0]) + ' ounce(s) of mulaa', 'percentage': complete/total})
+    emit('complete')
 
 
 
