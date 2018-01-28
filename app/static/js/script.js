@@ -35,6 +35,6 @@ $(document).ready(function () {
         var drink = $('.slick-center').data('drink');
         console.log(drink);
         socket.emit('get turnt', {data: drink});
+        $("#progressModal").modal('show');
     })
 });
-
