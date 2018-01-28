@@ -8,7 +8,8 @@
 
     <link rel="stylesheet" type="text/css" href="/static/css/style.css">
     <link rel="stylesheet" type="text/css" href="/static/css/slick.css">
-
+    <link rel="stylesheet" type="text/css" href="http://kenwheeler.github.io/slick/slick/slick-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
@@ -19,9 +20,13 @@
 
 <body>
 <div class="container">
-    <div class="your-class">
+    <div class="drink-carousel">
         {% for drink in drinks.values() %}
-        <div class="drink">{{drink['name']}}</div>
+        <div class="drink">
+            <img src="{{drink['img']}}" style="width: 200px; margin: 0 auto 14px auto;">
+            <h3 class="lead">{{drink['name']}}</h3>
+        </div>
+
         {% endfor %}
     </div>
 </div>
