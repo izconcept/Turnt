@@ -1,3 +1,6 @@
+html, body{
+	font-family: 'Roboto', sans-serif;
+}
 .drink-carousel {
     margin-top: 40px;
 }
