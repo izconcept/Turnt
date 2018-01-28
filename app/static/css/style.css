@@ -1,3 +1,8 @@
 body {
     margin-top: 10px;
 }
+
+.drink {
+    /*border: 1px solid grey;*/
+    text-align: center;
+}
