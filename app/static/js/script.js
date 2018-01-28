@@ -5,6 +5,11 @@ function drinkServed() {
         icon: "success",
         button: "Thanks!"
     });
+
+    $('.progress-bar').css('width', '0');
+    $('#drinkStatus').text('Calling Bartender...')
+    $('#progressModal').modal('hide');
+    
 }
 
 
@@ -57,6 +62,6 @@ $(document).ready(function () {
     });
 
     socket.on('complete', function() {
-        console.log('DONE')
+        setTimeout(function(){drinkServed()}, 2000)
     })
 });
