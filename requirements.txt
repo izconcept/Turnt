@@ -1,3 +1,4 @@
 eventlet==0.18.4
 Flask
 Flask-SocketIO==2.2
+pyautogui

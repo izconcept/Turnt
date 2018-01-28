@@ -31,5 +31,10 @@ $(document).ready(function () {
             }
         ]
     });
+    $("#getTurnt").click(function() {
+        var drink = $('.slick-center').data('drink');
+        console.log(drink);
+        socket.emit('get turnt', {data: drink});
+    })
 });
 

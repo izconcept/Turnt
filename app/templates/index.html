@@ -28,15 +28,15 @@
 <div class="container">
     <div class="center">
     <div class="drink-carousel">
-        {% for drink in drinks.values() %}
-        <div class="drink">
-            <img src="{{drink['img']}}" style="width: 200px; margin: 0 auto 14px auto;">
-            <h3 class="lead">{{drink['name']}}</h3>
+        {% for drink in drinks %}
+        <div class="drink" data-drink="{{drink}}">
+            <img src="{{drinks[drink]['img']}}" style="width: 200px; margin: 0 auto 14px auto;">
+            <h3 class="lead">{{drinks[drink]['name']}}</h3>
         </div>
         {% endfor %}
     </div>
         <div style="text-align: center">
-        <a href="#" class="button button-glow button-border button-rounded button-primary" style="width: 200px; text-align: center;">Get Turnt</a>
+        <a href="#" id="getTurnt" class="button button-glow button-border button-rounded button-primary" style="width: 200px; text-align: center;">Get Turnt</a>
         </div>
     </div>
 </div>
