@@ -28,4 +28,4 @@ chmod a+x run.py
 
 ### What It Does
 [Devpost](https://devpost.com/software/turnt-hm13r8)  
-![](https://media.giphy.com/media/3o7WItvuwao8K5D06Q/giphy.gif)  
+![](https://github.com/izconcept/Turnt/blob/master/turnt.gif)  
