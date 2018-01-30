@@ -46,7 +46,4 @@ def bartender(recipe):
     emit('complete')
 
 
-
 from app.routes import views
-
-
