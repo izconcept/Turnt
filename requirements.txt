@@ -6,3 +6,4 @@ Flask-Login
 Flask-SQLAlchemy
 SQLAlchemy
 rauth
+Flask-WTF

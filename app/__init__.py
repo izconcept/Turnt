@@ -1,5 +1,6 @@
 from flask import Flask, session
 from flask_socketio import SocketIO, emit
+from app.models.forms import UserForm
 
 app = Flask(__name__)
 socketio = SocketIO(app)

@@ -1,6 +1,7 @@
 from app import app, drinks
 from flask import render_template, session, redirect, request
 from app.services.BAC import calculate_bac
+from app.models.forms import UserForm
 
 
 @app.route('/')
