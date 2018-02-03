@@ -1,15 +1,19 @@
 # Turnt
 
+## MLH ConuHacks III first place overall winner
+
 ### IOT Automatic Drink Recipe Mixer
 
-Turnt is an IOT drink maker. Made with Python, G-code, 1/2" ID plumbing, CNC step motors, Qualcomm micro-controller, garden hose valves, 2 milk cartons.
+Turnt is an IOT drink maker. Made with Python, G-code, 1/2" ID plumbing, CNC step motors, Qualcomm micro-controller, garden hose valves, and 2 milk cartons.
+
+### How to run
 
 ```
 ~ python3 -m venv .env
 ```
 
 ```
-source .env/bin/activate
+~ source .env/bin/activate
 ```
 
 ```
@@ -17,15 +21,15 @@ source .env/bin/activate
 ```
 
 ```
-deactivate
+~ deactivate
 ```
 
 ```
-chmod a+x run.py
+~ chmod a+x run.py
 ```
 
 ```
-./run.py
+~ ./run.py
 ```
 
 ### What It Does
